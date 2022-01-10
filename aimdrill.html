@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Drill 1.0</title>
+    <link rel="stylesheet" href="aimdrill.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background:white">
+    <header>
+        <div id="navbar"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="logo">
+                            <img src="coredrill.png" alt="Core Drill" style="width:15px;height:15px">
+                        </a>
+                    </li>
+                    <li style="padding:14px 16px">
+                        Pierce the Heavens
+                    </li>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="game">
+        <div id="frame">
+            <div class="target" id="target1" onmousedown="hitSound(); checkMiss('target1'); updateMiss(); toggleColor('target1')">
+            </div>
+            <div class="target" id="target2" onmousedown="hitSound2(); checkMiss('target2'); updateMiss(); toggleColor('target2')">
+            </div>
+            <div class="target" id="target3" onmousedown="hitSound3(); checkMiss('target3'); updateMiss(); toggleColor('target3') ">
+            </div>
+            <div class="target" id="target4" onmousedown="hitSound4(); checkMiss('target4'); updateMiss(); toggleColor('target4')">
+            </div>
+            <div class="target" id="target5" onmousedown="hitSound5(); checkMiss('target5'); updateMiss(); toggleColor('target5')">
+            </div>
+            <div class="target" id="target6" onmousedown="hitSound6(); checkMiss('target6'); updateMiss(); toggleColor('target6')">
+            </div>
+            <div class="target" id="target7" onmousedown="hitSound7(); checkMiss('target7'); updateMiss(); toggleColor('target7')">
+            </div>
+            <div class="target" id="target8" onmousedown="hitSound8(); checkMiss('target8'); updateMiss(); toggleColor('target8')">
+            </div>
+            <div class="target" id="target9" onmousedown="hitSound9(); checkMiss('target9'); updateMiss(); toggleColor('target9')">
+            </div>
+            <div class="target" id="target10" onmousedown="hitSound10(); checkMiss('target10'); updateMiss(); toggleColor('target10')">
+            </div>
+            <div class="target" id="target11" onmousedown="hitSound11(); checkMiss('target11'); updateMiss(); toggleColor('target11')">
+            </div>
+            <div class="target" id="target12" onmousedown="hitSound12(); checkMiss('target12'); updateMiss(); toggleColor('target12')">
+            </div>
+            <div class="target" id="target13" onmousedown="hitSound13(); checkMiss('target13'); updateMiss(); toggleColor('target13')">
+            </div>
+            <div class="target" id="target14" onmousedown="hitSound14(); checkMiss('target14'); updateMiss(); toggleColor('target14')">
+            </div>
+            <div class="target" id="target15" onmousedown="hitSound15(); checkMiss('target15'); updateMiss(); toggleColor('target15')">
+            </div>
+            <div class="target" id="target16" onmousedown="hitSound16(); checkMiss('target16'); updateMiss(); toggleColor('target16')">
+            </div>
+        </div>
+        <div id="stats">
+            <span id="hits">0</span>
+            <span id="misses">0</span>
+        </div>
+        <div id="volumerange">
+            <input id="volume" type="range" min="0" max="1.0" step="0.1" onchange="getVolume()">Volume (0.0 - 1.0): 
+            <span id="volume-value">0.5</span>
+        </div>
+        <p id="countdown">
+        </p>
+    </div>
+</body>
+<script src="aimdrill.js"></script>
+</html>

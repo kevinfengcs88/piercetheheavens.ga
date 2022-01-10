@@ -1,0 +1,481 @@
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{ display: none; }
+
+title{
+    display:none;
+}
+
+table, th, td{
+    border:1px solid floralwhite;
+    border-collapse:collapse;
+    padding:5px;
+    color:white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color:white;
+    text-align:center;
+}
+
+h1{
+    font-size:48px;
+}
+
+h2{
+    font-size:36px;
+}
+
+h3{
+    font-size:24px;
+}
+
+a{
+    display:inline;
+}
+
+p{
+    font-size:1em;
+}
+
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#333;
+}
+
+li{
+  float:left;
+}
+
+li a{
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+}
+
+li a:hover{
+  background-color:#111;
+}
+
+figcaption{
+    text-align:center; 
+    padding-top:20px
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* one placed at the top of each page to avoid overlap with the navbar */
+#spacer{
+  padding-top:100px;
+}
+
+#about{
+    line-height:30px;
+    color:black;
+    padding-left:400px;
+    padding-right:400px;
+    text-align:left;
+}
+
+#blog{
+    padding-left:30%;
+    padding-right:30%;
+}
+
+#content{
+    line-height:30px;
+    color:black;
+    padding-left:20%;
+    padding-right:20%;
+    text-align:left;
+}
+
+#blogposts{
+    padding-left:0;
+    padding-right:0;
+    padding-top:20px;
+}
+
+.line{
+    height:2px;
+    border-width:0;
+    background-color:gray
+}
+
+.post{
+    text-align:center
+}
+
+.blogtitle{
+    font-size:2vw;
+    color:#386BC1;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.center-image{
+    display:block;
+    margin:0 auto;
+}
+
+nav{
+    color:white;
+}
+
+body{
+    margin:0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-image:url("background.jpg");
+}
+
+.clickable:hover{
+  cursor:pointer;
+}
+
+.animation1{
+    position:relative;
+    display:inline-block;
+    padding:15px 30px;
+    color:#000000;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    text-decoration:none;
+    font-size:24px;
+    overflow:hidden;
+    transition:0.2s;
+}
+.animation1:hover{
+    color: #ffffff;
+    background:#000000;
+    box-shadow:0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+    transition-delay:1s;
+}
+
+.animation1 span{
+    position:absolute;
+    display:block;
+}
+
+.animation1 span:nth-child(1){
+    top:0;
+    left:-100%;
+    width:100%;
+    height:2px;
+    background:linear-gradient(90deg, transparent,#000000);
+}
+
+.animation1:hover span:nth-child(1){
+    left:100%;
+    transition:1s;
+
+}
+
+.animation1 span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:2px;
+    background:linear-gradient(270deg, transparent,#000000);
+}
+
+.animation1:hover span:nth-child(3){
+    right:100%;
+    transition:1s;
+    transition-delay:0.5s
+}
+
+.animation1 span:nth-child(2){
+    top:-100%;
+    right:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(180deg, transparent,#000000);
+}
+
+.animation1:hover span:nth-child(2){
+    top:100%;
+    transition:1s;
+    transition-delay:0.25s
+}
+
+.animation1 span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(360deg, transparent,#000000);
+}
+
+.animation1:hover span:nth-child(4){
+    bottom:100%;
+    transition:1s;
+    transition-delay:0.75s
+}
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  header{
+      position:fixed;      
+      width:100%;
+      top:0px;
+  }
+
+  #foot{
+    position:fixed;      
+    width:100%;
+    bottom:0px;
+  }
+
+  #back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  #back2Top:hover {
+      background-color: #DDF;
+      color: #000;
+  }
+
+  .reset-this {
+    animation : none;
+    animation-delay : 0;
+    animation-direction : normal;
+    animation-duration : 0;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+    animation-timing-function : ease;
+    backface-visibility : visible;
+    background : 0;
+    background-attachment : scroll;
+    background-clip : border-box;
+    background-color : transparent;
+    background-image : none;
+    background-origin : padding-box;
+    background-position : 0 0;
+    background-position-x : 0;
+    background-position-y : 0;
+    background-repeat : repeat;
+    background-size : auto auto;
+    border : 0;
+    border-style : none;
+    border-width : medium;
+    border-color : inherit;
+    border-bottom : 0;
+    border-bottom-color : inherit;
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius : 0;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-image : none;
+    border-left : 0;
+    border-left-color : inherit;
+    border-left-style : none;
+    border-left-width : medium;
+    border-radius : 0;
+    border-right : 0;
+    border-right-color : inherit;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 0;
+    border-top : 0;
+    border-top-color : inherit;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    border-top-style : none;
+    border-top-width : medium;
+    bottom : auto;
+    box-shadow : none;
+    box-sizing : content-box;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : inherit;
+    columns : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none currentColor;
+    column-rule-color : currentColor;
+    column-rule-style : none;
+    column-rule-width : none;
+    column-span : 1;
+    column-width : auto;
+    content : normal;
+    counter-increment : none;
+    counter-reset : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline;
+    empty-cells : show;
+    float : none;
+    font : normal;
+    font-family : inherit;
+    font-size : medium;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : normal;
+    hyphens : none;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style : none;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : 0;
+    margin-left : 0;
+    margin-right : 0;
+    max-height : none;
+    max-width : none;
+    min-height : 0;
+    min-width : 0;
+    opacity : 1;
+    orphans : 0;
+    outline : 0;
+    outline-color : invert;
+    outline-style : none;
+    outline-width : medium;
+    overflow : visible;
+    overflow-x : visible;
+    overflow-y : visible;
+    padding : 0;
+    padding-bottom : 0;
+    padding-left : 0;
+    padding-right : 0;
+    padding-top : 0;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    perspective : none;
+    perspective-origin : 50% 50%;
+    position : static;
+    /* May need to alter quotes for different locales (e.g fr) */
+    quotes : '\201C' '\201D' '\2018' '\2019';
+    right : auto;
+    tab-size : 8;
+    table-layout : auto;
+    text-align : inherit;
+    text-align-last : auto;
+    text-decoration : none;
+    text-decoration-color : inherit;
+    text-decoration-line : none;
+    text-decoration-style : solid;
+    text-indent : 0;
+    text-shadow : none;
+    text-transform : none;
+    top : auto;
+    transform : none;
+    transform-style : flat;
+    transition : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : none;
+    transition-timing-function : ease;
+    unicode-bidi : normal;
+    vertical-align : baseline;
+    visibility : visible;
+    white-space : normal;
+    widows : 0;
+    word-spacing : normal;
+    z-index : auto;
+    /* basic modern patch */
+    all: initial;
+    all: unset;
+}

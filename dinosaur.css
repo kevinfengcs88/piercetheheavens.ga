@@ -1,0 +1,292 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#title{
+    margin:100px;
+    margin-left:0;
+    margin-bottom:0;
+}
+
+#game{
+    width:500px;
+    height:200px;
+    border:1px solid black;
+}
+
+#character{
+    width:20px;
+    height:50px;
+    background-color:red;
+    position:relative;
+    top:150px;
+}
+
+.animate{
+    animation:jump 500ms;
+}
+
+#block{
+    width:20px;
+    height:20px;
+    background-color:cyan;
+    position:relative;
+    top:130px;
+    left:480px;
+    animation:block 1s infinite linear;
+}
+
+@keyframes jump{
+    0%{top:150px;}
+    10%{top:140px;}
+    20%{top:130px;}
+    30%{top:120px;}
+    40%{top:110px;}
+    50%{top:100px;}
+    60%{top:110px;}
+    70%{top:120px;}
+    80%{top:130px;}
+    90%{top:140px;}
+    100%{top:150px;}
+}
+
+@keyframes block{
+    0%{left:480px;}
+    100%{left:-40px;}
+}
+
+#bounce{
+    width:100px;
+    height:100px;
+    color:white;
+    position:relative;
+    top:200px;
+    left:800px;
+    animation:bounce 5s infinite;
+}
+
+@keyframes bounce{
+    from{color:white;}
+    to{color:red;}
+}
+
+title{
+    display:none;
+}
+
+table, th, td{
+    border:1px solid floralwhite;
+    border-collapse:collapse;
+    padding:5px;
+    color:white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color:white;
+    text-align:center;
+}
+
+h1{
+    font-size:48px;
+}
+
+h2{
+    font-size:36px;
+}
+
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#333;
+}
+
+li{
+    float:left;
+}
+
+li a{
+    display:block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+
+li a:hover{
+    background-color:#111;
+}
+
+a{
+    display:inline;
+    padding:8px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+nav{
+    color:white;
+    display:inline;
+}
+
+nav a:visited{
+    color:white;
+}
+
+body{
+    margin:0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+aside {
+    width:30%;
+    padding-left:15px;
+    margin-left:15px;
+    float:right;
+    background-color:lightgray;
+  }
+
+.animation1{
+    position:relative;
+    display:inline-block;
+    padding:15px 30px;
+    color:#000000;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    text-decoration:none;
+    font-size:24px;
+    overflow:hidden;
+    transition:0.2s;
+}
+.animation1:hover{
+    color: #ffffff;
+    background:#000000;
+    box-shadow:0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+    transition-delay:1s;
+}
+
+.animation1 span{
+    position:absolute;
+    display:block;
+}
+
+.animation1 span:nth-child(1){
+    top:0;
+    left:-100%;
+    width:100%;
+    height:2px;
+    background:linear-gradient(90deg, transparent,#000000);
+}
+
+.animation1:hover span:nth-child(1){
+    left:100%;
+    transition:1s;
+
+}
+
+.animation1 span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:2px;
+    background:linear-gradient(270deg, transparent,#000000);
+}
+
+.animation1:hover span:nth-child(3){
+    right:100%;
+    transition:1s;
+    transition-delay:0.5s
+}
+
+.animation1 span:nth-child(2){
+    top:-100%;
+    right:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(180deg, transparent,#000000);
+}
+
+.animation1:hover span:nth-child(2){
+    top:100%;
+    transition:1s;
+    transition-delay:0.25s
+}
+
+.animation1 span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(360deg, transparent,#000000);
+}
+
+.animation1:hover span:nth-child(4){
+    bottom:100%;
+    transition:1s;
+    transition-delay:0.75s
+}
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }}

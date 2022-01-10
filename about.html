@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background:white">
+    <header>
+        <div id="navbar"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="logo">
+                            <img src="coredrill.png" alt="Core Drill" style="width:15px;height:15px">
+                        </a>
+                    </li>
+                    <li style="padding:14px 16px">
+                        Pierce the Heavens
+                    </li>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="spacer"></div>
+    <div id="about">
+        <h3 style="color:black">
+            ABOUT 
+        </h3>
+        <hr class="line"> 
+        <p>
+            In the summer of 2016, exactly four years prior to the creation of this website, 
+            I created my first website, <u>www.piercetheheavensproject.com</u> (which is no longer being hosted) as a means
+            of archiving the ideas of myself and others in order to take a philosophical lens to the complex world that we live in. 
+            Now that I think back on it, I never set out to do that&mdash;the website started out as a research project 
+            on the concerningly slow progress of national space organizations on propulsion. It quickly took on
+            more and more inquiries aside from the stagnation of propulsion, including the human pineal gland (the third eye),
+            living architecture, and the artificial intelligence. I was largely fascinated with the concept of impossibility,
+            and much of my inspiration sprouted from my deep interest in impossible figures&mdash;those 2D illusions that make your
+            mind question the feasibility of their existence in a 3D plane. You can learn more about impossible figures in this blog post
+            <a href="#">here.</a> 
+        </p>
+        <p>
+            <u>piercetheheavens.ga</u> is a continuation of the project that I started that one summer's day. I will continue
+            my research into the advancement of artificial intelligence, the sustainability of the Earth, the colonization of Mars, 
+            archetypes in literature, and most notably, humanity. I've always found myself with an innate love for humans, as odd
+            as that may sound in writing. Growing up in a world filled with more and more individuals holding strong
+            dissatisfaction for humans and even their own countries has made me realize the unique circumstances we find ourselves in
+            today. Though we are already one-fifth of the way through this century, we're still very much in the turn of the 21<sup>st</sup>
+            century. Unimaginable advances in technology will come forth in the upcoming years, and as human innovation has 
+            demonstrated time and time again, they will be impossible in the modern perspective. It's almost certain that thousands
+            of these inventions are already here, but are simply veiled from the public. Unveiling those innovations prematurely
+            while hearkening to the patterns of humanity's past is to pierce the heavens.
+        </p>
+        <h3 style="color:black">
+            KEVIN
+        </h3>
+        <hr class="line">
+        <p>
+            I'd like to think that I really didn't know who I was until 8th grade, right before entering high school. 
+            It began in 1st period Geometry with Dr. Steffero&mdash;a class that was unlike the usual flood of busy work and 
+            meaningless memorization. Like a few select classes throughout my early education, I felt that I could learn with the system
+            without even realizing it. I found this freedom in particular with one project that had very few limitations apart
+            from the topics provided (of which there were a wide variety). I was glad to see that "impossible figures" was an
+            available topic. I had always been fascinated by the illusions, borrowing <u>The Great Book of Optical Illusions</u>
+            from the public library over and over again (often in consecutive instances). It's difficult to put a finger on 
+            exactly which part of these optical illusions intrigued me, but it was certain that I became engrossed in the concept
+            of the <b>impossible</b> itself. 
+        </p>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Penrose-dreieck.svg/1200px-Penrose-dreieck.svg.png" 
+            alt="Penrose Triangle" width="300px" height="260px" class="center-image">
+            <figcaption style="text-align:center; padding-top:20px"><i>The Penrose Triangle, a classic impossible figure</i></figcaption>
+        </figure>
+        <p>
+            Just taking a look at impossible figures such as the Penrose Triangle above, I began to wonder about what deemed these
+            entities as impossible. Why was anything impossible in the first place? If something were to be impossible, then it would
+            be, in the most literal sense, not possible, or unachievable, across any number of trials, right? These types of questions
+            led me down a rabbit hole of metaphysical exploration, of which I was unaware at the time. You can read more about my
+            exploration of the impossible in the same article mentioned above.
+        </p>
+        <p>
+            Impossible figures. That's where it all started. Looking at something that had a both abstract and tangible existence
+            in the world at a level far deeper than I ever would have imagined has inspired me in everything else. Impossible figures
+            have brought me both reason and emotion, sanity and lunacy, and order and chaos. My name is Kevin Feng, and this is my story.
+        </p>
+    </div>
+    <footer>
+        <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    </footer>   
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+</script>
+</html>
