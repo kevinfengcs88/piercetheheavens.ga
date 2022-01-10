@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Human Benchmark</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body style="background:white">
+    <header>
+        <div id="navbar"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html" class="logo">
+                            <img src="../coredrill.png" alt="Core Drill" style="width:15px;height:15px">
+                        </a>
+                    </li>
+                    <li style="padding:14px 16px">
+                        Pierce the Heavens
+                    </li>
+                    <li>
+                        <a href="../index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="../blog.html">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="spacer"></div>
+    <div id="content">
+        <h3 style="color:black">
+            THE HUMAN BENCHMARK
+        </h3>
+        <h4 style="color:black">
+            By: Kevin Feng
+        </h4>
+        <hr class="line">
+        <p>
+            <a href="https://humanbenchmark.com/">The Human Benchmark</a> is a site that I've used numerous times in my life and I've already referenced it
+            a few times in previous blog posts. In short, it's a site that tests several cognitive abilities of humans through
+            modules. One module tests visual reaction time, another tests typing speed. Some modules are designed better than
+            others, but in the end, you can always compare your results with the database that the site collects from the trials
+            of previous users. Depending on the test, some people will always score higher than others due to factors like age,
+            IQ, and genetics (yes, genes can influence performance on technology&mdash;a topic that I plan to explore further
+            in a separate post). The Human Benchmark is actively maintained, and although it isn't clear how frequently it's
+            updated, it has certainly received entire new modules over the course of the few years that I have used it to
+            benchmark my own abilities. I would strongly suggest giving the website a visit; the modules are pretty fun and you
+            might learn a thing or two about human cognition and mechanical abilities. 
+        </p>
+        <p>
+            There are currently 8 modules on the site as of this blog post. They are: Reaction Time, Aim Trainer, Chimp tTest,
+            Visual Memory, Hearing, Typing, Number Memory, and Verbal Memory. Let's take a look at each one individually and
+            assess how valid they are in design.
+        </p>
+        <p>
+            <b>1. Reaction Time:</b><br>
+            A fairly simple test that I went over in my blog post titled <a href="the-science-of-aim.html">The Science of Aim</a>.
+            It's important to note that this reaction time test is designed for visual reaction time, which is much slower than
+            auditory reaction time. With auditory reaction time, a stimulus takes around 8-10 ms to reach the brain, whereas a
+            visual stimulus takes around 20-40 ms. On top of that, visual reaction time tests conducted through a computer and
+            computer screen will inevitably have some variance due to hardware. One of the most significant factors in this
+            variance is the refresh rate of the display being used, measured in Hz. A 60 Hz monitor will refresh 60 times per
+            second, while a 144 Hz monitor will refresh 144 times per second. There are monitors that go up to 360 Hz, but
+            at that point, it becomes practically impossible to discern by human eye. It is generally accepted that 240 Hz can be
+            distinguishable from 144 Hz, but not 360 Hz from 240 Hz. The other factor is the processing power of the hardware
+            itself (although this factor is much more unlikely to influence results). If the CPU of the computer stutters before
+            the visual stimulus is presented, then that can significantly delay the stimulus reaching the brain. This is fairly
+            unlikely, however, since the module is very simple and doesn't require much processing power for modern devices. 
+            Another potential factor that can influence the results of this reaction time test is the method by which input
+            is registered by the user. Since Human Benchmark also works on mobile devices, a user can indicate his/her reaction
+            to the stimulus in several ways, such as touchscreen, mouse click, trackpad click, trackpad touch, etc. Relatively
+            speaking, this factor isn't that significant towards the outcome. Using a mouse compared to a touchscreen won't make
+            or break someone's results. 
+        </p>
+        <p>
+            
+        </p>
+        <div id="sources">
+            <h4 style="color:black">
+                Sources
+            </h4>
+            <hr class="line">
+            1. <a href="https://humanbenchmark.com/">https://humanbenchmark.com/</a><br>
+            2. <a href="https://www.sjosm.org/article.asp?issn=1319-6308;year=2014;volume=14;issue=1;spage=35;epage=38;aulast=Ghuntla#:~:text=Perhaps%20this%20is%20because%20an,than%20the%20visual%20reaction%20time.">https://www.sjosm.org/article.asp?issn=1319-6308;year=2014;volume=14;issue=1;spage=35;epage=38;aulast=Ghuntla#:~:text=Perhaps%20this%20is%20because%20an,than%20the%20visual%20reaction%20time.</a>
+        </div>
+    </div>
+    
+    <footer>
+        <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    </footer>
+    <script src="../jquery.js"></script>
+<script>
+ $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+</script>
+</body>
+</html>
